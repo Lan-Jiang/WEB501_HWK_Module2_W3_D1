@@ -1,2 +1,2 @@
-# WEB501_HWK_Module2_W3_D1
-WEB501_HWK_Module2_W3_D1
+# WEB501_HWK_Module1
+WEB501_Homework_Module1
