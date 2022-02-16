@@ -37,29 +37,17 @@ function currentTime() {
     } 
 
     //Determine time zone
-    if (timeDiff >= 0) {
-        if (timeDiff == 8) {
+    if (adjTimeDiff == 8) {
             timeZone = 'PT';
-        } else if (timeDiff == 7) {
+            } else if (adjTimeDiff == 7) {
             timeZone = 'MT';
-        } else if (timeDiff == 6) {
+            } else if (adjTimeDiff == 6) {
             timeZone = 'CT';
-        } else if (timeDiff == 5) {
+            } else if (adjTimeDiff == 5) {
             timeZone = 'ET';
-        }
-    } else {
-        if (adjTimeDiff  == 8) {
-            timeZone = 'PT';
-        } else if (adjTimeDiff  == 7) {
-            timeZone = 'MT';
-        } else if (adjTimeDiff  == 6) {
-            timeZone = 'CT';
-        } else if (adjTimeDiff  == 5) {
-            timeZone = 'ET';
-        } else {
+            } else {
             timeZone = 'Unknown';
-        }
-    }
+            }
 
     //Assemble time format to display
     var time = hr + ":" + min + ":" + sec + " " + ampm + " " + timeZone;

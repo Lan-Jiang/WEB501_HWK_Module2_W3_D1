@@ -23,6 +23,7 @@
         }
         .main-header {
             background-color:rgba(255, 255, 255, 0.8);
+            opacity: 0.95;
             width: 700px;
             margin: 2em auto 0 auto; /* auto will be centered with in the header */
             min-height: 100px;
@@ -40,6 +41,7 @@
             display: flex;
             justify-content: end;
             font-weight: 400;
+            height:100px;
         }
         .main-menu ul li {
             list-style-type: none;
@@ -52,7 +54,8 @@
             text-transform: uppercase;
             font-size: 14px;
             text-align: center;
-            margin-top: -16px; /* when introduce flex, some value need to manual adjust*/
+            /* margin-top: -16px; when introduce flex, some value need to manual adjust*/
+            height: 100px;
         }
         .main-menu ul li a {
             text-decoration: none;
@@ -64,6 +67,7 @@
         .main-menu ul li.active {
             background: #9ed034;
             border: none; 
+            margin-left:170px;
         }   
         .main-menu ul li.active a {
             color: #fff;
@@ -408,4 +412,46 @@
         /* End selected activities enqueries */
 
 
-/* End external CSS for website */       
+/* End external CSS for website */      
+
+/* RWD */
+/* Media Queries */
+@media (max-width: 768px) {
+    footer #nondisclaimer .copy {
+        padding: 3.5em 0em 3.5em 0em;
+        text-align: center;
+        float: none;
+        font-size: 0.9em;
+      }
+      footer #nondisclaimer .social {
+        padding: 2.5em 0;
+        margin: 0;
+        text-align: center;
+        float: none;
+      }
+}
+
+@media (max-width: 992px) {
+    .logo img {
+        position: relative;
+        bottom: 8px;
+    }
+    .main-menu {
+        width: 200px;
+        background-color:rgb(255, 255, 255);
+        position: absolute;
+        right: 1.7em;
+      }
+      .main-menu ul li {
+        border-bottom: 1px solid rgba(202, 204, 202, 0.6);
+      }
+      main {
+        padding: 3em 1em 3em 1em;
+        margin: 0;
+      }
+      #home .main-col-content {
+        padding: 25px;
+        min-height: 450px;
+        margin-top: 1em;
+      }
+} 
