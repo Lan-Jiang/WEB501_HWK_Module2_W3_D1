@@ -4,40 +4,80 @@
     <title>Great Cliff Intro</title>
     <meta charset="utf-8">
     <meta name = "viewport" content = "width = device-width, initial-scale = 1, shrink-to-fit = no">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Link external CSS style file -->
     <link rel="stylesheet" href="style.css"> 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 </head>
 <body id="activities">
 
-<!-- start container to wrap -->
-<div id="container">
+<!-- Navbar  -->
+<div class="container sticky-top">
+    <div class="navbar-main">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <div class="logo">
+            <a class="navbar-brand" href="#">
+              <img class="" src="images/logo.png">
+            </a>
+          </div>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <div class="main-menu">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="cliffs.html">Cliffs</a>
+                </li>
+                <li class="nav-item active">
+                  <a href="activities.html">Activities</a>
+                </li>
+                <li class="nav-item">
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+</div> <!-- end container -->
+
 <!-- start brand of website -->
 <header>
-    <div class="main-header">
-        <div class="logo">
-            <img src="images/logo.png" alt="Great Cliffs Logo" Width="125">
-        </div>
-        <!-- start main navigation -->
-        <nav class="main-menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="cliffs.html">Cliffs</a></li>
-                <li class="active"><a href="activities.html">Activities</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav> <!-- end main navigation -->
-    </div>
-</header> <!-- end brand of website -->
+</header><!-- end brand of website -->
 
 <!-- main content -->
 <main>
     <h1>California's Greatest Cliffs</h1>
     <p>There are many planned activities at all the cliff sites. Some are scheduled daily, weekly, monthly and yearly. These activities are not however run by the state park and recreational department. They are operated and manage by private vendors but are partners with the state department. Therefore, for schedule inquiries or information, please contact them directly. For a list of activities, please refer to the table below:</p>
-    <table>
+    
+    <div id="container">
+        <table>
         <caption>Activities at the Cliffs</caption>
         <thead>
             <tr>
@@ -86,6 +126,8 @@
             </tr>
         </tbody>
     </table>
+    </div>
+
     <div id="displaySelected" onload="hidedisplaySelected()">
         <div id="result">
             <h4>My selected activities to enquire:</h4>
@@ -183,10 +225,27 @@
 
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script
+src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+crossorigin="anonymous"
+></script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+crossorigin="anonymous"
+></script>
+<script
+src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+crossorigin="anonymous"
+></script>
 
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+crossorigin="anonymous"
+></script>
 
 </body>
 </html>

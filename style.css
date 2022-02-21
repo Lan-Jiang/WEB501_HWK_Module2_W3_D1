@@ -197,7 +197,7 @@ nav {
 #images img{
         width: 100%;
 }
-    /* End images gallery*/
+/* End images gallery*/
 
         /* Partners */
         section {
@@ -273,45 +273,52 @@ nav {
             background: #125688;
             color:white;
         }
-        /* Activities */
-        table {
-            width: 1000px;
-            margin: 4em 2em 4em 4em;
-        }
-        caption {
-            background: #852B1B;
-            height: 40px;
-            color: #fff;
-            font-size: 1.3em;
-            font-weight: bold;
-            padding-top: 1em;
+/* Activities */
+/* Start Table */
+table {
+    width: 1000px;
+    margin: 4em auto 0 auto;
+    border: solid 1px #852b1b;
+}
+caption {
+    background-color: #852b1b;
+    height: 40px;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-top: 1em;
+    margin-top: -23em;
+    text-align: center;
 
-        }
-        thead {
-            background: #bde1ff;
-        }
-        tbody {
-            background: #eeffe6;
-            text-align: center;
-        }
-        th, td {
-            width: 225px;
-            height: 75px;
-            vertical-align: middle;
-            border: 1px solid #852b1b;
-        }
-        th:first-child {
-            width: 125px;
-            height: 50px;
-            background: #4977d1;
-            color: #fff;
+}
+thead {
+    background: #bde1ff;
+    text-align: center;
+}
+tbody {
+    background: #eeffe6;
+    text-align: center;
+}
+th, td {
+    width: 225px;
+    height: 75px;
+    vertical-align: middle;
+    border: solid 1px #852b1b;
+}
+th:first-child {
+    width: 125px;
+    height: 50px;
+    background: #4977d1;
+    color: #fff;
 
-        }
-        td:first-child {
-            font-weight: bold;
-            background: #bde1ff;
-        }
-        /* Contact */
+}
+td:first-child {
+    font-weight: bold;
+    background: #bde1ff;
+}
+/* End table */
+
+/* Contact */
         .contactinfo span{
             font-size: 12px;
         }
@@ -413,7 +420,7 @@ form fieldset legend {
 }
 /* End JS code generator */
 
-        /* Start selected activities enqueries */
+/* Start selected activities enqueries */
         #activities main #displaySelected {
             visibility: hidden;
             width: 600px;
@@ -440,7 +447,7 @@ form fieldset legend {
             width: 200px;
             display: inline-block;
         }
-        /* End selected activities enqueries */
+/* End selected activities enqueries */
 
 
 /* End external CSS for website */      
