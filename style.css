@@ -49,32 +49,30 @@ header {
     justify-content: flex-start;
     position: relative;
     right: 12px;
+    padding-bottom:4px;
 }
 /* Nevigation */
 .main-menu {
     font-weight: 400;
 }
-button {
+.navbar-main button {
     margin-right: 20px;
 }
 nav {
     height: 100px;
-
+    opacity: 0.8;
+    background:rgba(38, 41, 61, 0.7)
 }
-        .main-menu ul li {
-            list-style-type: none;
-            display: inline;
-            float: left;
-            padding-left: 15px;
-            padding-right: 15px;
-            border-left: 1px solid rgba(202, 204, 202, 0.6);
-            line-height: 100px;
-            text-transform: uppercase;
-            font-size: 14px;
-            text-align: center;
-            /* margin-top: -16px; when introduce flex, some value need to manual adjust*/
-            height: 100px;
-        }
+.main-menu ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-left: 1px solid rgba(202, 204, 202, 0.6);
+    line-height: 100px;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
         .main-menu ul li a {
             text-decoration: none;
             color:#888; /* Mouse over */
@@ -265,159 +263,100 @@ nav {
         .contactinfo span:first-child{
             font-weight: bold;
         }
-        /* Start contact form */
-        form {
-            width: 1000px;
-            margin-top: 10px;
-            font-size: 12px;
-        }
-        fieldset {
-            padding-top: 20px;
-            padding-left: 50px;
-        }
-        legend {
-            font-size: 15px;
-            font-weight: bold;
-            text-transform: uppercase;
-            color:#4977D1;
-            margin-left: 20px;
-        }
-        input {
-            display: block;
-        }
-        input[type="text"] {
-            width: 300px;
-        }
-        input[type="email"] {
-            width: 300px;
-        }
-        input[type="radio"] {
-            display: inline-block;
-            font-size: 10px;
-            margin-bottom: 15px;
-        }
-        input[type="submit"] {
-            color:#fff;
-            font-size: 20px;
-            font-weight: bold;
-        }
-        label {
-            font-weight: bold;
-            /* margin-top: 5px; */
-        } /*? padding*/
-        form .textbox input {
-            margin-bottom: 10px;
-            font-size:10px;
-        } /* select the right selector to apply changes*/
-        form .selectmenu select {
-            margin-bottom: 15px;
-            width: 130px;
-            text-align: center;
-        }
-        form .commentbox label {
-            display: block;
-        }
-        form .commentbox textarea {
-            width: 300px;
-            height:100px;   
-        }
-        form .button {
-            margin: 10px auto 20px 153px;
-            border: none;
-            outline: none;
-        }
-        form .button input {
-            width: 105px;
-            border: none;
-            outline: none;
-            text-align: center;
-            padding: 5px 10px;
-            /* background: #4977D1;*/
-        }
-        form .button div{
-            display: inline-block;
-            /* background-color:#4977D1; */
-        }
-        .fa-paper-plane-o {
-            margin-top:0px;
-            vertical-align: top;
-            padding: 5px 10px;
-            /* background-color: #4977D1; */
-        }
-        /* End contact form */
-
-        /* Start images gallery */
-        #images {
-            /* display: flex; */
-            /* flex-flow: column;  */
-            margin-top: 3em;
-            margin-bottom: 3em;
-        }
-        #images div.row {
-            /* display: flex;
-            flex-flow: row; */
-            justify-content: center; /* to control the pic in center */
-        }
-        #images div.row a {
-            padding-left: 50px;
-        }
-        #images div.row h4 {
-            background: rgb(102, 46, 6);
-            height: 40px;
-            font-family: Arial, Helvetica, sans-serif;
-            color: #fff;
-            text-align: center;
-            padding-top: 10px;
-            margin-bottom: 0px;
-        }
-        #images img{
-            width: 100%;
-        }
-        /* End images gallery*/
-
-        /* Start JS currentTime() */
-        #timeofday {
-            background: rgb(118,213,245);
-            background: linear-gradient(180deg, rgba(118,213,245,1) 0%, rgba(215,215,139,1) 100%);
-            height: 50px;
-            text-align: center;
-            padding-top: 15px;
-        }
-        #timeofday span {
-            font-family: Arial, Helvetica, sans-serif;
-            color: #125688;
-        }
-        #timeofday span:first-child {
-            color: #3a3a3a;
-        }
-        /* End JS currentTime() */
-
-        /* Start JS code generator */
-        .randomcode {
-            display: flex;
-            justify-content: space-start;
-            height: 40px;
-        }
-        .randomcode input {
-            width: 100px;
-            height: auto;
-            margin-left: 100px;
-            text-align: center;
-        }
-        #codes {
-            width: 95px;
-            height: 26px;
-            text-align: center;
-            background: lightgrey;
-            margin: 0px 0px 0px 5px;
-            padding-top: 13px;
-
-        }
-        .selected {
-            background: darkgreen;
-        }
-
-        /* End JS code generator */
+/* Start contact form */
+.contactinfo {
+    margin: 2em 0 1em 0;
+}
+  
+.contactinfo .phone {
+    margin: 0 0 0.75em 0;
+}
+  
+.contactinfo .phone span:first-child,
+.contactinfo .email span:first-child {
+    font-weight: bold;
+}
+  
+form fieldset {
+    border: solid 2px #9ed034;
+}
+  
+form fieldset legend {
+    color: #4977d1;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.5em 0.5em;
+    display: flex;
+    justify-content: top;
+}
+  
+  form .textbox,
+  form .radios,
+  form .selectmenu,
+  form .commentbox,
+  form .button {
+    margin: 1.5em 0 1.5em 2em;
+  }
+  
+  form label {
+    font-weight: bold;
+  }
+  
+  form .textbox input {
+    margin: 0 0 1em 0;
+    display: block;
+    height: 2em;
+    width: 50%;
+  }
+  
+  form .selectmenu select {
+    width: 12em;
+    padding-left: 3em;
+  }
+  
+  form .commentbox textarea {
+    display: block;
+    height: 17em;
+    width: 50%;
+    resize: none;
+  }
+  
+  form .randomcode {
+    width: 51.5%;
+    text-align: right;
+  }
+  
+  form .randomcode input {
+    margin-right: 1em;
+    height: 2.5em;
+  }
+  
+  form .randomcode #codes {
+    display: inline;
+    padding: 1em;
+    background-color: #c0c0c0;
+  }
+  
+  form .button {
+    width: 9%;
+    text-align: center;
+    border:none;
+    margin-left: 20em;
+  }
+  
+  form .button input {
+    width: 8em;
+    height: 2.5em;
+    font-size: 1.2em;
+    font-weight: bold;
+    /*background-color: rgb(73, 119, 209, 0.4);*/
+    color: rgba(255, 255, 255, 0.5);
+    border: none;
+  }
+.selected {
+    background: darkgreen;
+}
+/* End JS code generator */
 
         /* Start selected activities enqueries */
         #activities main #displaySelected {
