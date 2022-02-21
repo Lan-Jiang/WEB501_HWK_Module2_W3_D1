@@ -325,32 +325,31 @@ td:first-child {
         .contactinfo span:first-child{
             font-weight: bold;
         }
+
 /* Start contact form */
 .contactinfo {
     margin: 2em 0 1em 0;
-}
+  }
   
-.contactinfo .phone {
+  .contactinfo .phone {
     margin: 0 0 0.75em 0;
-}
+  }
   
-.contactinfo .phone span:first-child,
-.contactinfo .email span:first-child {
+  .contactinfo .phone span:first-child,
+  .contactinfo .email span:first-child {
     font-weight: bold;
-}
+  }
   
-form fieldset {
+  form fieldset {
     border: solid 2px #9ed034;
-}
+  }
   
-form fieldset legend {
+  form fieldset legend {
     color: #4977d1;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 0.5em 0.5em;
-    display: flex;
-    justify-content: top;
-}
+    padding: 0 0.5em;
+  }
   
   form .textbox,
   form .radios,
@@ -390,7 +389,7 @@ form fieldset legend {
   
   form .randomcode input {
     margin-right: 1em;
-    height: 2.5em;
+    height: 2em;
   }
   
   form .randomcode #codes {
@@ -400,10 +399,10 @@ form fieldset legend {
   }
   
   form .button {
-    width: 9%;
-    text-align: center;
+    width: 100px;
+    text-align: right;
+    margin-left: 13em;
     border:none;
-    margin-left: 20em;
   }
   
   form .button input {
@@ -414,7 +413,9 @@ form fieldset legend {
     /*background-color: rgb(73, 119, 209, 0.4);*/
     color: rgba(255, 255, 255, 0.5);
     border: none;
-  }
+}
+/* End contact form, contact page */
+
 .selected {
     background: darkgreen;
 }
