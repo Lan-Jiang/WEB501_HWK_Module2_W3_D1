@@ -144,6 +144,24 @@ nav {
         #contact main p {
             font-size: 12px;
         }
+/* Start JS Clock timeofday */
+/* Start JS currentTime() */
+#timeofday {
+            background: rgb(118,213,245);
+            background: linear-gradient(180deg, rgba(118,213,245,1) 0%, rgba(215,215,139,1) 100%);
+            height: 50px;
+            text-align: center;
+            padding-top: 15px;
+}
+#timeofday span {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #125688;
+}
+#timeofday span:first-child {
+            color: #3a3a3a;
+}
+/* End JS currentTime() */
+
         /* Partners */
         section {
             width: 100%;
