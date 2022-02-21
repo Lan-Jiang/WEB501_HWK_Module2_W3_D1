@@ -72,10 +72,12 @@ nav {
     line-height: 100px;
     text-transform: uppercase;
     font-size: 14px;
+    background-color: rgba(38, 41, 61, 0.7);
   }
         .main-menu ul li a {
             text-decoration: none;
-            color:#888; /* Mouse over */
+            color:rgb(255, 255, 255); /* Mouse over */
+            font-weight:400;
         }       
         .main-menu ul li a:hover {
             color:#9ed034; /* Mouse over */
@@ -432,7 +434,7 @@ form fieldset legend {
     }
     .main-menu {
         width: 200px;
-        background-color:rgb(255, 255, 255);
+        background-color:rgba(38, 41, 61, 0.7);
         position: absolute;
         right: 1.7em;
       }
